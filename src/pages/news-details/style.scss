@@ -1,0 +1,42 @@
+.news-details-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+
+    .news-details-title {
+        font-size: 1.5rem;
+        width: 100%;
+        text-align: justify;
+
+    }
+
+    .image-about {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .image {
+            width: 50%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .about {
+            padding: 2%;
+            width: 45%;
+
+            .author {
+                font-size: 1.1rem;
+            }
+
+            .description {
+                text-align: justify;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,138 @@
+.news-container-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+    margin: 2% auto;
+    font-size: 13px;
+
+    .news-content-list {
+        position: relative;
+        border-radius: 5px;
+        margin: 10px;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        width: 520px;
+        height: 260px;
+
+        // @media screen and (max-width: 1137px) {
+        //     width: 700px;
+        // }
+        .image {
+            // border: 1px solid;
+            height: 100%;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        .title-description {
+            padding: 7% 2%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .title {
+                font-size: 1.2rem;
+            }
+
+            .see-more-favourite {
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .see-more {
+                    display: flex;
+                    align-items: center;
+                    height: 30px;
+                    font-size: 15px;
+                }
+
+                .heart {
+                    position: absolute;
+                    top: 2%;
+                    right: 2%;
+                    font-size: 1.6rem;
+                    color: red;
+                }
+            }
+        }
+
+    }
+}
+
+.news-container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+
+    .news-content-grid {
+        // position: relative;
+        border-radius: 5px;
+        margin: 10px;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 270px;
+        height: 500px;
+
+        .image {
+            height: 100%;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        .title-description {
+            position: relative;
+            padding: 7% 2%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .title {
+                font-size: 1.2rem;
+            }
+
+            .see-more-favourite {
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .see-more {
+                    display: flex;
+                    align-items: center;
+                    height: 30px;
+                    font-size: 15px;
+                }
+
+                .heart {
+                    position: absolute;
+                    top: 2%;
+                    right: 2%;
+                    font-size: 1.6rem;
+                    color: red;
+                }
+            }
+        }
+    }
+}
