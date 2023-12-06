@@ -87,7 +87,7 @@
         flex-direction: column;
         justify-content: center;
         width: 270px;
-        height: 500px;
+        height: 600px;
 
         .image {
             height: 100%;
@@ -102,7 +102,7 @@
 
         .title-description {
             position: relative;
-            padding: 7% 2%;
+            padding: 10% 2% 2% 2%;
             width: 100%;
             display: flex;
             align-items: center;
@@ -134,5 +134,18 @@
                 }
             }
         }
+    }
+}
+
+.offline-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    button {
+        margin-top: 2%;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 2px 10px;
     }
 }

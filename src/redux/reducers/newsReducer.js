@@ -7,12 +7,9 @@ const InitialState = {
 
 export const getInitialStateAsync = createAsyncThunk('/news/setInitialState',
     async () => {
-
         const response = await axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=5af17781b6ec455e9b2305eaafe48862')
-        // console.log(response);
         return response.data
     })
-
 const newsSlice = createSlice({
     name: 'news',
     initialState: InitialState,
@@ -24,8 +21,6 @@ const newsSlice = createSlice({
     },
     extraReducers: (builder) => {
         builder.addCase(getInitialStateAsync.fulfilled, (state, action) => {
-
-            // console.log(action.payload.articles);
             state.news = [...action.payload.articles.map((article, index) => ({ ...article, id: index }))];
         })
     }

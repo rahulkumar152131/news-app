@@ -7,6 +7,7 @@ import NewsDetails from "./pages/news-details/NewsDetails";
 import Signin from "./pages/sign-in/Signin";
 import Signup from "./pages/sign-up/Signup";
 import Favourite from "./pages/favourite/Favourite";
+import OfflinePage from "./pages/offline/OfflinePage";
 function App() {
   return (
     <Provider store={store}>
@@ -55,6 +56,23 @@ function App() {
                 <>
                   <NavBar />
                   < Signup />
+                </>
+              }
+            />
+            <Route
+              path="/offline"
+              element={
+                <>
+                  <NavBar />
+                  < OfflinePage />
+                </>
+              }
+            />
+            <Route
+              path="*"
+              element={
+                <>
+                  <h1 style={{ textAlign: 'center', marginTop: '5%' }}>Page not Found</h1>
                 </>
               }
             />
